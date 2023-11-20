@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>App de contactos</title>
+</head>
+<body>
+    <h1>APP DE CONTACTOS</h1>
+    <button style="--clr:#da46d3;" onclick="mostrarFormulario('crear')">Crear Contacto</button>
+    <ul id="lista-contactos"></ul>
+    <div id="formulario" style="display: none;">
+        <h2 id="formulario-titulo"></h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>       
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" required>
+            <button type="submit">Guardar</button>
+            <button type="button" onclick="ocultarFormulario()">Cancelar</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
